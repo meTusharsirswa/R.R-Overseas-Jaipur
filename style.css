@@ -50,7 +50,7 @@ td > input {
   font-size: 15px;
 }
 .buttons{
-  margin-left: 80px;
+  margin-left: 100px;
   /* margin-: 50px; */
 }
 button {
@@ -66,50 +66,6 @@ button:hover {
   background-color: #0056b3;
 }
 #dataTable {
-  margin-left: 80px; /* Adjust as needed */
-  margin-right: 80px; /* Adjust as needed */
-}
-@media (max-width: 768px) {
-  .table-container {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  table,
-  thead,
-  tbody,
-  th,
-  td,
-  tr {
-    display: block;
-  }
-  th,
-  td {
-    padding: 10px;
-    text-align: left;
-    border: none;
-    position: relative;
-    padding-left: 50%;
-  }
-
-  th::before,
-  td::before {
-    position: absolute;
-    left: 6px;
-    width: 45%;
-    white-space: nowrap;
-  }
-
-  th::before {
-    content: attr(data-th);
-    font-weight: bold;
-  }
-
-  td::before {
-    content: attr(data-th);
-    font-weight: bold;
-  }
-  #dataTable {
-    margin: 0 10px;
-  }
+  margin-left: 100px; /* Adjust as needed */
+  margin-right: 100px; /* Adjust as needed */
 }

@@ -49,7 +49,10 @@ td > input {
   border: none;
   font-size: 15px;
 }
-
+.buttons{
+  margin-left: 50px;
+  /* margin-: 50px; */
+}
 button {
   margin: 20px 10px;
   padding: 10px 20px;
@@ -62,9 +65,9 @@ button {
 button:hover {
   background-color: #0056b3;
 }
-#dataTable{
-  margin-left: 20px; /* Adjust as needed */
-  margin-right: 10px; /* Adjust as needed */
+#dataTable {
+  margin-left: 50px; /* Adjust as needed */
+  margin-right: 50px; /* Adjust as needed */
 }
 @media (max-width: 768px) {
   .table-container {
@@ -80,7 +83,6 @@ button:hover {
   tr {
     display: block;
   }
-
   th,
   td {
     padding: 10px;
@@ -106,5 +108,8 @@ button:hover {
   td::before {
     content: attr(data-th);
     font-weight: bold;
+  }
+  #dataTable {
+    margin: 0 10px;
   }
 }

@@ -19,7 +19,7 @@ body {
 }
 
 #party_name{
-width: 13% !important;
+width: 15% !important;
 }
 table {
   width: 180%; /* Ensure the table is wider than the container to trigger horizontal scroll */

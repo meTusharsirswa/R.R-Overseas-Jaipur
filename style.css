@@ -2,57 +2,55 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
   display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: auto;
+  width: 200%;
 }
+
 .table-container {
   display: flex;
   justify-content: center;
-  overflow-x: auto;
+  /* overflow-x: auto; */
+  width: 100%;
 }
+
 #caption {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   margin: 15px 0px;
 }
 
-#party_name{
-width: 15% !important;
+#party_name {
+  width: 8% !important;
 }
+
 table {
-  width: 180%; /* Ensure the table is wider than the container to trigger horizontal scroll */
+  width: 100%;
   border-collapse: collapse;
 }
+
 th,
 td {
   border: 1px solid #000;
   text-align: center;
-  width: 6%; /* All columns have a width of 10% */
+  /* width: 5%; */
+  padding: 6px; /* Add padding to make cells larger */
+  min-width: 100px; /* Ensure a minimum width for each cell */
 }
+
 th {
   background-color: #f2f2f2;
 }
+
 td > input {
   width: 95%;
   outline: none;
   border: none;
   font-size: 15px;
 }
-#addRowBtn {
-  margin: 20px 0;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-#addRowBtn:hover {
-  background-color: #0056b3;
-}
-#savePdfBtn,
-#resetTableBtn {
+
+button {
   margin: 20px 10px;
   padding: 10px 20px;
   background-color: #007bff;
@@ -60,15 +58,17 @@ td > input {
   border: none;
   cursor: pointer;
 }
-#savePdfBtn:hover,
-#resetTableBtn:hover {
+
+button:hover {
   background-color: #0056b3;
 }
+
 @media (max-width: 768px) {
   .table-container {
     flex-direction: column;
     align-items: stretch;
   }
+
   table,
   thead,
   tbody,
@@ -77,6 +77,7 @@ td > input {
   tr {
     display: block;
   }
+
   th,
   td {
     padding: 10px;
@@ -85,6 +86,7 @@ td > input {
     position: relative;
     padding-left: 50%;
   }
+
   th::before,
   td::before {
     position: absolute;
@@ -92,10 +94,12 @@ td > input {
     width: 45%;
     white-space: nowrap;
   }
+
   th::before {
     content: attr(data-th);
     font-weight: bold;
   }
+
   td::before {
     content: attr(data-th);
     font-weight: bold;

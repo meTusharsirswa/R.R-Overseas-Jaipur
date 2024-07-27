@@ -62,7 +62,10 @@ button {
 button:hover {
   background-color: #0056b3;
 }
-
+#dataTable{
+  margin-left: 20px; /* Adjust as needed */
+  margin-right: 10px; /* Adjust as needed */
+}
 @media (max-width: 768px) {
   .table-container {
     flex-direction: column;

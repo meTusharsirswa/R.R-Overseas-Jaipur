@@ -34,6 +34,9 @@ td > input {
   border: none;
   font-size: 15px;
 }
+#party_name{
+width: 13% !important;
+}
 #addRowBtn {
   margin: 20px 0;
   padding: 10px 20px;

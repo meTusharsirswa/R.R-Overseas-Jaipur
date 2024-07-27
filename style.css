@@ -1,0 +1,105 @@
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+th{
+  padding: 3px 7px;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .table-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+  }
+  #caption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #000;
+    /* padding: 8px; */
+    text-align: center;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  td>input{
+    width: 95%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+  }
+  #party_name{
+    width: 10%;
+  }
+  .party_data{
+    width: 6%;
+  }
+  #addRowBtn {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  #addRowBtn:hover {
+    background-color: #0056b3;
+  }
+  #savePdfBtn, #resetTableBtn {
+    margin: 20px 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  #savePdfBtn:hover, #resetTableBtn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .table-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+    th::before, td::before {
+      position: absolute;
+      left: 6px;
+      width: 45%;
+      white-space: nowrap;
+    }
+    th::before {
+      content: attr(data-th);
+      font-weight: bold;
+    }
+    td::before {
+      content: attr(data-th);
+      font-weight: bold;
+    }
+  }
+  
